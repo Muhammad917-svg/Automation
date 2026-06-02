@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eman - Beautiful Love Confession & Marriage Website">
+    <title>Eman - Love Confession & Marriage</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>✨ Eman</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#confession" class="nav-link">Confession</a></li>
+                    <li><a href="#marriage" class="nav-link">Marriage</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Express Your Love</h1>
+                <p class="hero-subtitle">Share your deepest feelings & celebrate your special moments</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('confession')">Start Confession</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('marriage')">Plan Marriage</button>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-heart">❤️</div>
+                <div class="floating-heart" style="animation-delay: 2s">💍</div>
+                <div class="floating-heart" style="animation-delay: 4s">✨</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confession Section -->
+    <section id="confession" class="confession-section">
+        <div class="container">
+            <h2 class="section-title">💌 Love Confession</h2>
+            <p class="section-subtitle">Share your feelings in the most beautiful way</p>
+            
+            <div class="confession-grid">
+                <div class="confession-card">
+                    <div class="card-icon">📝</div>
+                    <h3>Write Your Story</h3>
+                    <p>Craft a heartfelt message expressing your deepest emotions and memories together</p>
+                </div>
+                <div class="confession-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Add Personalization</h3>
+                    <p>Customize with colors, photos, and music to make it truly unique</p>
+                </div>
+                <div class="confession-card">
+                    <div class="card-icon">📤</div>
+                    <h3>Share Beautifully</h3>
+                    <p>Send via link or display on any device with smooth animations</p>
+                </div>
+            </div>
+
+            <div class="confession-form">
+                <form id="confessionForm">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="text" placeholder="Their name" class="form-input" required>
+                    <textarea placeholder="Write your confession..." class="form-textarea" rows="8" required></textarea>
+                    <input type="color" id="colorPicker" value="#ff6b9d" class="form-color">
+                    <button type="submit" class="btn btn-primary">Create Confession</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marriage Section -->
+    <section id="marriage" class="marriage-section">
+        <div class="container">
+            <h2 class="section-title">💍 Marriage Planning</h2>
+            <p class="section-subtitle">Plan your perfect day with style and elegance</p>
+            
+            <div class="marriage-features">
+                <div class="feature-item">
+                    <div class="feature-icon">📅</div>
+                    <h3>Event Timeline</h3>
+                    <p>Organize all ceremonies and celebrations with our interactive timeline</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <h3>Guest Management</h3>
+                    <p>Track RSVPs and manage your guest list effortlessly</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Customizable Themes</h3>
+                    <p>Choose from beautiful pre-designed themes or create your own</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📸</div>
+                    <h3>Photo Gallery</h3>
+                    <p>Showcase engagement, pre-wedding, and event photos elegantly</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Music & Media</h3>
+                    <p>Add background music, videos, and create memorable moments</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💌</div>
+                    <h3>Digital Invites</h3>
+                    <p>Send stunning digital invitations with RSVPs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">📸 Moments Gallery</h2>
+            <p class="section-subtitle">Celebrate beautiful moments together</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="gallery-overlay">Engagement</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="gallery-overlay">Pre-Wedding</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="gallery-overlay">Ceremony</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="gallery-overlay">Reception</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="gallery-overlay">Memories</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <div class="gallery-overlay">Forever</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <p>support@eman.love</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <p>123 Love Street, Romance City</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-textarea" rows="6" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Eman. Celebrating Love & Marriage. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

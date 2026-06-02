@@ -1,0 +1,311 @@
+/* Tablet Devices (768px to 1024px) */
+@media (max-width: 1024px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-animation {
+        height: 300px;
+    }
+
+    .floating-heart {
+        font-size: 3rem;
+    }
+
+    .confession-grid,
+    .marriage-features,
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Devices (480px to 767px) */
+@media (max-width: 767px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 1rem 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hero {
+        min-height: 80vh;
+        margin-top: 70px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-animation {
+        height: 200px;
+    }
+
+    .floating-heart {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .confession-grid,
+    .marriage-features,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .confession-card,
+    .feature-item,
+    .gallery-item {
+        animation: none;
+    }
+
+    .confession-form {
+        padding: 1.5rem;
+    }
+
+    .form-input,
+    .form-textarea,
+    .form-color {
+        padding: 10px 12px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobile Devices (up to 479px) */
+@media (max-width: 479px) {
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        letter-spacing: 0px;
+    }
+
+    .confession-card,
+    .feature-item {
+        padding: 1.5rem;
+    }
+
+    .card-icon,
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    .contact-info,
+    .info-item {
+        gap: 1rem;
+    }
+
+    .info-item {
+        padding: 1rem;
+    }
+
+    .info-icon {
+        font-size: 1.5rem;
+    }
+
+    .hero-animation {
+        height: 150px;
+    }
+
+    .floating-heart {
+        font-size: 1.5rem;
+    }
+
+    .gallery-grid {
+        gap: 1rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-buttons {
+        gap: 0.5rem;
+    }
+
+    .confession-form {
+        padding: 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .nav-wrapper {
+        padding: 0.75rem 0;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-animation {
+        height: 150px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    .btn {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .navbar {
+        background: rgba(30, 30, 30, 0.95);
+    }
+
+    .form-input,
+    .form-textarea,
+    .confession-form,
+    .contact-form,
+    .confession-card,
+    .feature-item,
+    .info-item {
+        background-color: #2a2a2a;
+        border-color: #404040;
+        color: #e0e0e0;
+    }
+}
